@@ -82,5 +82,5 @@ if __name__ == "__main__":
 
     features = np.reshape(features, newshape=(features.shape[0], -1))
     pred = km.fit_predict(features)
-    from . import metrics
+    import metrics
     print('acc=', metrics.acc(y, pred), 'nmi=', metrics.nmi(y, pred), 'ari=', metrics.ari(y, pred))
